@@ -3,16 +3,17 @@
 <h2>Guia de comandos básicos pra o Docker</h2>
 
 1. Docker run - cria e executa um container de acordo com a imagem escolhida.
-2. Docker pull - faz o download de uma imagem do DockerHub.
-3. Docker ps - mostra os containers em exercução.
-4. Docker ps -a - mostra os containers que estão ativos e não ativos.
-5. Docker images - mostra as imagens que tem no host.
-6. Docker exec - executa um comando para em um container.
-7. Docker history - mostra todas as camadas da imagem.
-8. Docker inspect - dar informações da imagem ou do container.
-9. Docker build - Utilizamos para poder usar o arquivo Dockerfile e iniciar o container com todas as dependencias do arquivo. Parametros -t para dar nome a imagem.
-10. Docker stop $(docker container ls -q)
-11. Docker login -u - serve para logar na sua conta do DockerHub na sua maquina.
+2. Docker run - Usando com a frag -v podemos criar um volume onde ficará os arquivos mesmo depois do container ter sido destruído. docker run -v /home/leo/volume-docker:/app -it ubuntu bash 
+3. Docker pull - faz o download de uma imagem do DockerHub.
+4. Docker ps - mostra os containers em exercução.
+5. Docker ps -a - mostra os containers que estão ativos e não ativos.
+6. Docker images - mostra as imagens que tem no host.
+7. Docker exec - executa um comando para em um container.
+8. Docker history - mostra todas as camadas da imagem.
+9. Docker inspect - dar informações da imagem ou do container.
+10. Docker build - Utilizamos para poder usar o arquivo Dockerfile e iniciar o container com todas as dependencias do arquivo. Parametros -t para dar nome a imagem.
+11. Docker stop $(docker container ls -q)
+12. Docker login -u - serve para logar na sua conta do DockerHub na sua maquina.
 13. Docker push nome da imagem - É utilizado para enviar a imagem para o DockerHub.
 
 
