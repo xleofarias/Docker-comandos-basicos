@@ -1,6 +1,6 @@
-# Docker-comandos-basicos
+<h1>Docker-comandos-basicos</h1>
 
-##Guia de comandos básicos pra o Docker
+<h2>Guia de comandos básicos pra o Docker</h2>
 
 1. Docker run - cria e executa um container de acordo com a imagem escolhida.
 2. Docker pull - faz o download de uma imagem do DockerHub.
@@ -14,7 +14,7 @@
 10. Docker stop $(docker container ls -q)
 
 
-##Guia para o Dockerfile
+<h3>Guia para o Dockerfile</h3>
 
 - FROM - É o nome e a versão da imagem. Exemplo: node:latest
 - WORKDIR - É a pasta onde o container irá trabalhar, podemos criar ela dentro do arquivo por exemplo /app-node
