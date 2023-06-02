@@ -12,6 +12,8 @@
 8. Docker inspect - dar informações da imagem ou do container.
 9. Docker build - Utilizamos para poder usar o arquivo Dockerfile e iniciar o container com todas as dependencias do arquivo. Parametros -t para dar nome a imagem.
 10. Docker stop $(docker container ls -q)
+11. Docker login -u - serve para logar na sua conta do DockerHub na sua maquina.
+13. Docker push nome da imagem - É utilizado para enviar a imagem para o DockerHub.
 
 
 <h3>Guia para o Dockerfile</h3>
