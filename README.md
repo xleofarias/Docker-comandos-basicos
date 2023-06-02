@@ -16,11 +16,11 @@
 
 ##Guia para o Dockerfile
 
-1.FROM - É o nome e a versão da imagem. Exemplo: node:latest
-2. WORKDIR - É a pasta onde o container irá trabalhar, podemos criar ela dentro do arquivo por exemplo /app-node
-3. COPY - É onde iremos copiar o conteúdo do projeto e onde ele vai se usado, então sera na pasta atual "." e dentro da pasta /app-node que vai ficar também representado pelo ".".
-4. RUN - O nome do comando que iremos executar, exemplo npm install.
-5. ARG - Serve para colocar a variavel de ambiente, mas ela só serve no momento da criação do container, exemplo ARG PORT=6000
-6. ENV - Praticamente igual ao ARG mas ele serve para se usar dentro do container, exemplo ENV $PORT
-7. ENTRYPOINT - O ponto de entrada do processo, aqui iremos iniciar o npm. usando o comando npm start.
-8. EXPOSE - Serve para quem for usar o dockerfile e a aplicação for web saber em qual porta ela está exposta, exemplo 3000.
+- FROM - É o nome e a versão da imagem. Exemplo: node:latest
+- WORKDIR - É a pasta onde o container irá trabalhar, podemos criar ela dentro do arquivo por exemplo /app-node
+- COPY - É onde iremos copiar o conteúdo do projeto e onde ele vai se usado, então sera na pasta atual "." e dentro da pasta /app-node que vai ficar também representado pelo ".".
+- RUN - O nome do comando que iremos executar, exemplo npm install.
+- ARG - Serve para colocar a variavel de ambiente, mas ela só serve no momento da criação do container, exemplo ARG PORT=6000
+- ENV - Praticamente igual ao ARG mas ele serve para se usar dentro do container, exemplo ENV $PORT 
+- ENTRYPOINT - O ponto de entrada do processo, aqui iremos iniciar o npm. usando o comando npm start. 
+- EXPOSE - Serve para quem for usar o dockerfile e a aplicação for web saber em qual porta ela está exposta, exemplo 3000.
