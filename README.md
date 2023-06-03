@@ -15,7 +15,7 @@
 11. Docker stop $(docker container ls -q)
 12. Docker login -u - serve para logar na sua conta do DockerHub na sua maquina.
 13. Docker push nome da imagem - É utilizado para enviar a imagem para o DockerHub.
-
+14. Docker network ls - Para saber as redes ativas no host.
 
 <h3>Guia para o Dockerfile</h3>
 
